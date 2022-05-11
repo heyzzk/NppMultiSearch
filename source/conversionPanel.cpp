@@ -144,7 +144,7 @@ INT_PTR CALLBACK ConversionPanel::run_dlgProc(UINT message, WPARAM wParam, LPARA
 						int pos_t5 = 0;
 						int found = 0;
 						start = cur;
-						while (buffer[cur] != '\n' && buffer[cur] != EOF)	//process by line
+						while (buffer[cur] != '\n' && buffer[cur] != EOF && cur<size)	//process by line
 						{
 							if (found == 1) //has found, skip the comparation
 							{
